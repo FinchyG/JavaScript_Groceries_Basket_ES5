@@ -1,17 +1,5 @@
-@font-face {
-    font-family: 'fruit_saleregular';
-    src: url('fonts/fruitsale-webfont.woff2') format('woff2'),
-         url('fonts/fruitsale-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'superfruitbold';
-    src: url('fonts/superfruit-webfont.woff2') format('woff2'),
-         url('fonts/superfruit-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+body {
+    background-color: rgb(66, 244, 98);
 }
 
 h1 {
@@ -129,4 +117,20 @@ button {
     display: none;
     width: 60%;
     margin-left: 6em;
+}
+
+@font-face {
+    font-family: 'fruit_saleregular';
+    src: url('fonts/fruitsale-webfont.woff2') format('woff2'),
+         url('fonts/fruitsale-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'superfruitbold';
+    src: url('fonts/superfruit-webfont.woff2') format('woff2'),
+         url('fonts/superfruit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
