@@ -1,14 +1,14 @@
 // foodtype constructor function
 
-function Foodtype(type, name, quantity, price, add_to_basket) {
-    this.type          = type;
-    this.name          = name;
-    this.quantity      = quantity;
-    this.price         = price;
-    this.add_to_basket = add_to_basket;
+function Foodtype(type, name, quantity, price, addToBasket) {
+  this.type          = type;
+  this.name          = name;
+  this.quantity      = quantity;
+  this.price         = price;
+  this.addToBasket   = addToBasket;
 }
 
-Foodtype.prototype.total_price = function() { return this.quantity * this.price};
+Foodtype.prototype.total_price = function () { return this.quantity * this.price};
 
 // currently available fruits
 
@@ -36,13 +36,14 @@ var chicken = new Foodtype("meat", "chicken", 0, 1.00, true);
 
 // function to capture value of <select> option and display available foods
 
-function show_selected_category() {
+function show_selected_category() { // eslint-disable-line no-unused-vars
 
     var selected_category = document.getElementById("food_categories").value;
 
     var available_fruits = document.getElementById("available_fruits");
     var available_vegetables = document.getElementById("available_vegetables");
     var available_breads = document.getElementById("available_breads");
+    var available_meats = document.getElementById("available_meats");
 
     switch(selected_category) {
 
@@ -96,9 +97,9 @@ function total_bill_amount() {
 
 // code for banana object
 
-function add_bananas_to_basket() {
+function add_bananas_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(banana.add_to_basket === true) {
+    if(banana.addToBasket === true) {
 
         banana.quantity += 1;
 
@@ -117,11 +118,11 @@ function add_bananas_to_basket() {
 
     }
 
-    banana.add_to_basket = false;
+    banana.addToBasket = false;
 
 }
 
-function quantity_plus_one_banana() {
+function quantity_plus_one_banana() { // eslint-disable-line no-unused-vars
 
     if(banana.quantity >= 1) {
 
@@ -137,7 +138,7 @@ function quantity_plus_one_banana() {
 
 }
 
-function quantity_minus_one_banana() {
+function quantity_minus_one_banana() { // eslint-disable-line no-unused-vars
 
     if(banana.quantity >= 1) {
         banana.quantity -= 1;
@@ -161,7 +162,7 @@ function remove_bananas_from_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
 
-    banana.add_to_basket = true;
+    banana.addToBasket = true;
 
     banana_quantity_display()
     total_bill_amount();
@@ -177,9 +178,9 @@ function banana_quantity_display() {
 
 // code for orange object
 
-function add_oranges_to_basket() {
+function add_oranges_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(orange.add_to_basket === true) {
+    if(orange.addToBasket === true) {
 
         orange.quantity += 1;
 
@@ -198,11 +199,11 @@ function add_oranges_to_basket() {
 
     }
 
-    orange.add_to_basket = false;
+    orange.addToBasket = false;
 
 }
 
-function quantity_plus_one_orange() {
+function quantity_plus_one_orange() { // eslint-disable-line no-unused-vars
 
     if(orange.quantity >= 1) {
 
@@ -218,7 +219,7 @@ function quantity_plus_one_orange() {
 
 }
 
-function quantity_minus_one_orange() {
+function quantity_minus_one_orange() { // eslint-disable-line no-unused-vars
 
     if(orange.quantity >= 1) {
         orange.quantity -= 1;
@@ -242,7 +243,7 @@ function remove_oranges_from_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
 
-    orange.add_to_basket = true;
+    orange.addToBasket = true;
 
     orange_quantity_display();
     total_bill_amount();
@@ -258,9 +259,9 @@ function orange_quantity_display() {
 
 // code for apple object
 
-function add_apples_to_basket() {
+function add_apples_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(apple.add_to_basket === true) {
+    if(apple.addToBasket === true) {
 
         apple.quantity += 1;
 
@@ -279,11 +280,11 @@ function add_apples_to_basket() {
 
     }
 
-    apple.add_to_basket = false;
+    apple.addToBasket = false;
 
 }
 
-function quantity_plus_one_apple() {
+function quantity_plus_one_apple() { // eslint-disable-line no-unused-vars
 
     if(apple.quantity >= 1) {
 
@@ -299,7 +300,7 @@ function quantity_plus_one_apple() {
 
 }
 
-function quantity_minus_one_apple() {
+function quantity_minus_one_apple() { // eslint-disable-line no-unused-vars
 
     if(apple.quantity >= 1) {
         apple.quantity -= 1;
@@ -323,7 +324,7 @@ function remove_apples_from_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
 
-    apple.add_to_basket = true;
+    apple.addToBasket = true;
 
     apple_quantity_display();
     total_bill_amount();
@@ -341,9 +342,9 @@ function apple_quantity_display() {
 
 // code for cauliflower object
 
-function add_cauliflowers_to_basket() {
+function add_cauliflowers_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(cauliflower.add_to_basket === true) {
+    if(cauliflower.addToBasket === true) {
 
         cauliflower.quantity += 1;
 
@@ -362,11 +363,11 @@ function add_cauliflowers_to_basket() {
 
     }
 
-    cauliflower.add_to_basket = false;
+    cauliflower.addToBasket = false;
 
 }
 
-function quantity_plus_one_cauliflower() {
+function quantity_plus_one_cauliflower() { // eslint-disable-line no-unused-vars
 
     if(cauliflower.quantity >= 1) {
 
@@ -382,7 +383,7 @@ function quantity_plus_one_cauliflower() {
 
 }
 
-function quantity_minus_one_cauliflower() {
+function quantity_minus_one_cauliflower() { // eslint-disable-line no-unused-vars
 
     if(cauliflower.quantity >= 1) {
         cauliflower.quantity -= 1;
@@ -406,7 +407,7 @@ function remove_cauliflowers_from_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
 
-    cauliflower.add_to_basket = true;
+    cauliflower.addToBasket = true;
 
     cauliflower_quantity_display()
     total_bill_amount();
@@ -422,9 +423,9 @@ function cauliflower_quantity_display() {
 
 // code for broccoli object
 
-function add_broccolis_to_basket() {
+function add_broccolis_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(broccoli.add_to_basket === true) {
+    if(broccoli.addToBasket === true) {
 
         broccoli.quantity += 1;
 
@@ -443,11 +444,11 @@ function add_broccolis_to_basket() {
 
     }
 
-    broccoli.add_to_basket = false;
+    broccoli.addToBasket = false;
 
 }
 
-function quantity_plus_one_broccoli() {
+function quantity_plus_one_broccoli() { // eslint-disable-line no-unused-vars
 
     if(broccoli.quantity >= 1) {
 
@@ -463,7 +464,7 @@ function quantity_plus_one_broccoli() {
 
 }
 
-function quantity_minus_one_broccoli() {
+function quantity_minus_one_broccoli() { // eslint-disable-line no-unused-vars
 
     if(broccoli.quantity >= 1) {
         broccoli.quantity -= 1;
@@ -487,7 +488,7 @@ function remove_broccolis_from_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
 
-    broccoli.add_to_basket = true;
+    broccoli.addToBasket = true;
 
     broccoli_quantity_display();
     total_bill_amount();
@@ -503,9 +504,9 @@ function broccoli_quantity_display() {
 
 // code for turnip object
 
-function add_turnips_to_basket() {
+function add_turnips_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(turnip.add_to_basket === true) {
+    if(turnip.addToBasket === true) {
 
         turnip.quantity += 1;
 
@@ -524,11 +525,11 @@ function add_turnips_to_basket() {
 
     }
 
-    turnip.add_to_basket = false;
+    turnip.addToBasket = false;
 
 }
 
-function quantity_plus_one_turnip() {
+function quantity_plus_one_turnip() { // eslint-disable-line no-unused-vars
 
     if(turnip.quantity >= 1) {
 
@@ -544,7 +545,7 @@ function quantity_plus_one_turnip() {
 
 }
 
-function quantity_minus_one_turnip() {
+function quantity_minus_one_turnip() { // eslint-disable-line no-unused-vars
 
     if(turnip.quantity >= 1) {
         turnip.quantity -= 1;
@@ -568,7 +569,7 @@ function remove_turnips_from_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
 
-    turnip.add_to_basket = true;
+    turnip.addToBasket = true;
 
     turnip_quantity_display();
     total_bill_amount();
@@ -586,9 +587,9 @@ function turnip_quantity_display() {
 
 // code for baguette object
 
-function add_baguettes_to_basket() {
+function add_baguettes_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(baguette.add_to_basket === true) {
+    if(baguette.addToBasket === true) {
   
         baguette.quantity += 1;
   
@@ -607,11 +608,11 @@ function add_baguettes_to_basket() {
   
     }
   
-    baguette.add_to_basket = false;
+    baguette.addToBasket = false;
   
 }
   
-  function quantity_plus_one_baguette() {
+  function quantity_plus_one_baguette() { // eslint-disable-line no-unused-vars
   
     if(baguette.quantity >= 1) {
   
@@ -627,7 +628,7 @@ function add_baguettes_to_basket() {
   
   }
   
-  function quantity_minus_one_baguette() {
+  function quantity_minus_one_baguette() { // eslint-disable-line no-unused-vars
   
     if(baguette.quantity >= 1) {
         baguette.quantity -= 1;
@@ -651,7 +652,7 @@ function add_baguettes_to_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
   
-    baguette.add_to_basket = true;
+    baguette.addToBasket = true;
   
     baguette_quantity_display()
     total_bill_amount();
@@ -667,9 +668,9 @@ function add_baguettes_to_basket() {
   
   // code for loaf object
   
-  function add_loafs_to_basket() {
+  function add_loafs_to_basket() { // eslint-disable-line no-unused-vars
   
-    if(loaf.add_to_basket === true) {
+    if(loaf.addToBasket === true) {
   
         loaf.quantity += 1;
   
@@ -688,11 +689,11 @@ function add_baguettes_to_basket() {
   
     }
   
-    loaf.add_to_basket = false;
+    loaf.addToBasket = false;
   
   }
   
-  function quantity_plus_one_loaf() {
+  function quantity_plus_one_loaf() { // eslint-disable-line no-unused-vars
   
     if(loaf.quantity >= 1) {
   
@@ -708,7 +709,7 @@ function add_baguettes_to_basket() {
   
   }
   
-  function quantity_minus_one_loaf() {
+  function quantity_minus_one_loaf() { // eslint-disable-line no-unused-vars
   
     if(loaf.quantity >= 1) {
         loaf.quantity -= 1;
@@ -732,7 +733,7 @@ function add_baguettes_to_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
   
-    loaf.add_to_basket = true;
+    loaf.addToBasket = true;
   
     loaf_quantity_display();
     total_bill_amount();
@@ -748,9 +749,9 @@ function add_baguettes_to_basket() {
   
   // code for roll object
   
-  function add_rolls_to_basket() {
+  function add_rolls_to_basket() { // eslint-disable-line no-unused-vars
   
-    if(roll.add_to_basket === true) {
+    if(roll.addToBasket === true) {
   
         roll.quantity += 1;
   
@@ -769,11 +770,11 @@ function add_baguettes_to_basket() {
   
     }
   
-    roll.add_to_basket = false;
+    roll.addToBasket = false;
   
   }
   
-  function quantity_plus_one_roll() {
+  function quantity_plus_one_roll() { // eslint-disable-line no-unused-vars
   
     if(roll.quantity >= 1) {
   
@@ -789,7 +790,7 @@ function add_baguettes_to_basket() {
   
   }
   
-  function quantity_minus_one_roll() {
+  function quantity_minus_one_roll() { // eslint-disable-line no-unused-vars
   
     if(roll.quantity >= 1) {
         roll.quantity -= 1;
@@ -813,7 +814,7 @@ function add_baguettes_to_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
   
-    roll.add_to_basket = true;
+    roll.addToBasket = true;
   
     roll_quantity_display();
     total_bill_amount();
@@ -831,9 +832,9 @@ function add_baguettes_to_basket() {
 
 // code for beef object
 
-function add_beefs_to_basket() {
+function add_beefs_to_basket() { // eslint-disable-line no-unused-vars
 
-    if(beef.add_to_basket === true) {
+    if(beef.addToBasket === true) {
   
         beef.quantity += 1;
   
@@ -852,11 +853,11 @@ function add_beefs_to_basket() {
   
     }
   
-    beef.add_to_basket = false;
+    beef.addToBasket = false;
   
   }
   
-  function quantity_plus_one_beef() {
+  function quantity_plus_one_beef() { // eslint-disable-line no-unused-vars
   
     if(beef.quantity >= 1) {
   
@@ -872,7 +873,7 @@ function add_beefs_to_basket() {
   
   }
   
-  function quantity_minus_one_beef() {
+  function quantity_minus_one_beef() { // eslint-disable-line no-unused-vars
   
     if(beef.quantity >= 1) {
         beef.quantity -= 1;
@@ -896,7 +897,7 @@ function add_beefs_to_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
   
-    beef.add_to_basket = true;
+    beef.addToBasket = true;
   
     beef_quantity_display()
     total_bill_amount();
@@ -912,9 +913,9 @@ function add_beefs_to_basket() {
   
   // code for pork object
   
-  function add_porks_to_basket() {
+  function add_porks_to_basket() { // eslint-disable-line no-unused-vars
   
-    if(pork.add_to_basket === true) {
+    if(pork.addToBasket === true) {
   
         pork.quantity += 1;
   
@@ -933,11 +934,11 @@ function add_beefs_to_basket() {
   
     }
   
-    pork.add_to_basket = false;
+    pork.addToBasket = false;
   
   }
   
-  function quantity_plus_one_pork() {
+  function quantity_plus_one_pork() { // eslint-disable-line no-unused-vars
   
     if(pork.quantity >= 1) {
   
@@ -953,7 +954,7 @@ function add_beefs_to_basket() {
   
   }
   
-  function quantity_minus_one_pork() {
+  function quantity_minus_one_pork() { // eslint-disable-line no-unused-vars
   
     if(pork.quantity >= 1) {
         pork.quantity -= 1;
@@ -977,7 +978,7 @@ function add_beefs_to_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
   
-    pork.add_to_basket = true;
+    pork.addToBasket = true;
   
     pork_quantity_display();
     total_bill_amount();
@@ -993,9 +994,9 @@ function add_beefs_to_basket() {
   
   // code for chicken object
   
-  function add_chickens_to_basket() {
+  function add_chickens_to_basket() { // eslint-disable-line no-unused-vars
   
-    if(chicken.add_to_basket === true) {
+    if(chicken.addToBasket === true) {
   
         chicken.quantity += 1;
   
@@ -1014,11 +1015,11 @@ function add_beefs_to_basket() {
   
     }
   
-    chicken.add_to_basket = false;
+    chicken.addToBasket = false;
   
   }
   
-  function quantity_plus_one_chicken() {
+  function quantity_plus_one_chicken() { // eslint-disable-line no-unused-vars
   
     if(chicken.quantity >= 1) {
   
@@ -1034,7 +1035,7 @@ function add_beefs_to_basket() {
   
   }
   
-  function quantity_minus_one_chicken() {
+  function quantity_minus_one_chicken() { // eslint-disable-line no-unused-vars
   
     if(chicken.quantity >= 1) {
         chicken.quantity -= 1;
@@ -1058,7 +1059,7 @@ function add_beefs_to_basket() {
     var ul = document.getElementById("basket");
     ul.removeChild(li);
   
-    chicken.add_to_basket = true;
+    chicken.addToBasket = true;
   
     chicken_quantity_display();
     total_bill_amount();
