@@ -1,0 +1,24 @@
+{
+  "name": "javascript_groceries_basket_es5",
+  "version": "1.0.0",
+  "description": "\"javascript groceries basket coded in es5\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinchyG/JavaScript_Groceries_Basket_ES5.git"
+  },
+  "author": "FinchyG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FinchyG/JavaScript_Groceries_Basket_ES5/issues"
+  },
+  "homepage": "https://github.com/FinchyG/JavaScript_Groceries_Basket_ES5#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.3.0"
+  }
+}
