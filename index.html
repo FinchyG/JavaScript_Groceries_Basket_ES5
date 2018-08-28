@@ -12,6 +12,8 @@
 
 <body>
 
+  <section id="leftSection">
+
   <h1>Groceries Store</h1>
 
   <select id="food_categories" onchange="show_selected_category()">
@@ -26,29 +28,26 @@
 
     <div class="foodtype">
       <h4>Banana</h4>
-      <button onclick="add_bananas_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_banana()">-</button>
+      <button id="quantity_minus_one_banana">-</button>
+      <button id="quantity_plus_one_banana">+</button>
       <p class="quantity_display" id="banana_quantity_display">0</p>
-      <button onclick="quantity_plus_one_banana()">+</button>
-      <button onclick="remove_bananas_from_basket()">Remove from Basket</button>
+      <button id="remove_bananas_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Orange</h4>
-      <button onclick="add_oranges_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_orange()">-</button>
+      <button id="quantity_minus_one_orange">-</button>
+      <button id="quantity_plus_one_orange">+</button>
       <p class="quantity_display" id="orange_quantity_display">0</p>
-      <button onclick="quantity_plus_one_orange()">+</button>
-      <button onclick="remove_oranges_from_basket()">Remove from Basket</button>
+      <button id="remove_oranges_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Apple</h4>
-      <button onclick="add_apples_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_apple()">-</button>
+      <button id="quantity_minus_one_apple">-</button>
+      <button id="quantity_plus_one_apple">+</button>
       <p class="quantity_display" id="apple_quantity_display">0</p>
-      <button onclick="quantity_plus_one_apple()">+</button>
-      <button onclick="remove_apples_from_basket()">Remove from Basket</button>
+      <button id="remove_apples_from_basket">Remove from Basket</button>
     </div>
 
   </div>
@@ -57,29 +56,26 @@
 
     <div class="foodtype">
       <h4>Cauliflower</h4>
-      <button onclick="add_cauliflowers_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_cauliflower()">-</button>
+      <button id="quantity_minus_one_cauliflower">-</button>
+      <button id="quantity_plus_one_cauliflower">+</button>
       <p class="quantity_display" id="cauliflower_quantity_display">0</p>
-      <button onclick="quantity_plus_one_cauliflower()">+</button>
-      <button onclick="remove_cauliflowers_from_basket()">Remove from Basket</button>
+      <button id="remove_cauliflowers_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Broccoli</h4>
-      <button onclick="add_broccolis_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_broccoli()">-</button>
+      <button id="quantity_minus_one_broccoli">-</button>
+      <button id="quantity_plus_one_broccoli">+</button>
       <p class="quantity_display" id="broccoli_quantity_display">0</p>
-      <button onclick="quantity_plus_one_broccoli()">+</button>
-      <button onclick="remove_broccolis_from_basket()">Remove from Basket</button>
+      <button id="remove_broccolis_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Turnip</h4>
-      <button onclick="add_turnips_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_turnip()">-</button>
+      <button id="quantity_minus_one_turnip">-</button>
+      <button id="quantity_plus_one_turnip">+</button>
       <p class="quantity_display" id="turnip_quantity_display">0</p>
-      <button onclick="quantity_plus_one_turnip()">+</button>
-      <button onclick="remove_turnips_from_basket()">Remove from Basket</button>
+      <button id="remove_turnips_from_basket">Remove from Basket</button>
     </div>
 
   </div>
@@ -88,29 +84,26 @@
 
     <div class="foodtype">
       <h4>Baguette</h4>
-      <button onclick="add_baguettes_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_baguette()">-</button>
+      <button id="quantity_minus_one_baguette">-</button>
+      <button id="quantity_plus_one_baguette">+</button>
       <p class="quantity_display" id="baguette_quantity_display">0</p>
-      <button onclick="quantity_plus_one_baguette()">+</button>
-      <button onclick="remove_baguettes_from_basket()">Remove from Basket</button>
+      <button id="remove_baguettes_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Loaf</h4>
-      <button onclick="add_loafs_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_loaf()">-</button>
+      <button id="quantity_minus_one_loaf">-</button>
+      <button id="quantity_plus_one_loaf">+</button>
       <p class="quantity_display" id="loaf_quantity_display">0</p>
-      <button onclick="quantity_plus_one_loaf()">+</button>
-      <button onclick="remove_loafs_from_basket()">Remove from Basket</button>
+      <button id="remove_loafs_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Roll</h4>
-      <button onclick="add_rolls_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_roll()">-</button>
+      <button id="quantity_minus_one_roll">-</button>
+      <button id="quantity_plus_one_roll">+</button>
       <p class="quantity_display" id="roll_quantity_display">0</p>
-      <button onclick="quantity_plus_one_roll()">+</button>
-      <button onclick="remove_rolls_from_basket()">Remove from Basket</button>
+      <button id="remove_rolls_from_basket">Remove from Basket</button>
     </div>
 
   </div>
@@ -119,45 +112,48 @@
 
     <div class="foodtype">
       <h4>Beef</h4>
-      <button onclick="add_beefs_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_beef()">-</button>
+      <button id="quantity_minus_one_beef">-</button>
       <p class="quantity_display" id="beef_quantity_display">0</p>
-      <button onclick="quantity_plus_one_beef()">+</button>
-      <button onclick="remove_beefs_from_basket()">Remove from Basket</button>
+      <button id="quantity_plus_one_beef">+</button>
+      <button id="remove_beefs_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Pork</h4>
-      <button onclick="add_porks_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_pork()">-</button>
+      <button id="quantity_minus_one_pork">-</button>
+      <button id="quantity_plus_one_pork">+</button>
       <p class="quantity_display" id="pork_quantity_display">0</p>
-      <button onclick="quantity_plus_one_pork()">+</button>
-      <button onclick="remove_porks_from_basket()">Remove from Basket</button>
+      <button id="remove_porks_from_basket">Remove from Basket</button>
     </div>
 
     <div class="foodtype">
       <h4>Chicken</h4>
-      <button onclick="add_chickens_to_basket()">Add to Basket</button>
-      <button onclick="quantity_minus_one_chicken()">-</button>
+      <button id="quantity_minus_one_chicken">-</button>
+      <button id="quantity_plus_one_chicken">+</button>
       <p class="quantity_display" id="chicken_quantity_display">0</p>
-      <button onclick="quantity_plus_one_chicken()">+</button>
-      <button onclick="remove_chickens_from_basket()">Remove from Basket</button>
+      <button id="remove_chickens_from_basket">Remove from Basket</button>
     </div>
 
   </div>
 
-  <div id="selected_items">
+  </section>
 
-    <h2>Basket</h2>
-    <span class="column_header">Food  |</span>
-    <span class="column_header">  Quantity  |</span>
-    <span class="column_header">   Price</span>
-    
-    <ul id="basket"></ul>
+  <section id="selected_items">
 
-    <p>Total:<span id="total_bill"> £0.00</span></p>
+    <div>
 
-  </div>
+      <h2>Basket</h2>
+      <span class="column_header">Food  |</span>
+      <span class="column_header">  Quantity  |</span>
+      <span class="column_header">   Price</span>
+      
+      <ul id="basket"></ul>
+
+      <p>Total:<span id="total_bill"> £0.00</span></p>
+
+    </div>
+
+  </section>
 
 </body>
 
